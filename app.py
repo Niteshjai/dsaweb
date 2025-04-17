@@ -3,9 +3,11 @@ import csv
 from collections import defaultdict
 import heapq
 import os
+from flask_cors import CORS
 
 # Initialize the Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Global data stores
 network_graph = defaultdict(list)
