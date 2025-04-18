@@ -5,10 +5,10 @@ import heapq
 import os
 from flask_cors import CORS
 
+
 # Initialize the Flask app
 app = Flask(__name__)
 CORS(app)
-
 # Global data stores
 network_graph = defaultdict(list)
 ip_coordinates = {}
@@ -43,7 +43,7 @@ csv_file = "Updated_DSADataset.csv"
 load_graph_from_csv(csv_file)
 
 # Dijkstra algorithm to find the shortest path
-def dijkstra(start_ip, end_ip="1.99.185.142"):
+def dijkstra(start_ip, end_ip="1.108.102.183"):
     queue = [(0, start_ip, [])]
     visited = set()
 
